@@ -104,16 +104,16 @@ const createDetailRestaurant = (restaurant) => `
     <h2>Review</h2>
     <section class="restaurant__detail__review">
       ${restaurant.customerReviews
-        .map(
-          (element) => `
+    .map(
+      (element) => `
         <div>
           <h3>${element.name}</h3>
           <p class="body">${element.review}</p>
           <p class="date">${element.date}</p>
         </div>
       `,
-        )
-        .join('')}
+    )
+    .join('')}
     </section>
   </section>
 `;

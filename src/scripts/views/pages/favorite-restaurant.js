@@ -16,8 +16,8 @@ const FavoriteRestaurant = {
     const restaurantContainer = document.querySelector('.restaurant__list');
 
     if (restaurant.length === 0) {
-      restaurantContainer.innerHTML +=
-        '<p class="restaurant-item__empty" style="color:red;">Anda belum memiliki daftar restoran favorit?</p>';
+      restaurantContainer.innerHTML
+        += '<p class="restaurant-item__empty" style="color:red;">Anda belum memiliki daftar restoran favorit?</p>';
     }
     restaurant.forEach((restaurants) => {
       restaurantContainer.innerHTML += createItemRestaurant(restaurants);
